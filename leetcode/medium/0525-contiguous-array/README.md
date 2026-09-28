@@ -44,30 +44,39 @@ Explanation: [1,1,1,0,0,0] is the longest contiguous subarray with equal number 
 
 ## Solution
 
-**Language:** Python  
-**Runtime:** 81 ms (beats 43.87%)  
-**Memory:** 25.1 MB (beats 78.32%)  
-**Submitted:** 2026-09-28T09:07:06.565Z  
+**Language:** Java  
+**Runtime:** 22 ms (beats 88.66%)  
+**Memory:** 65.3 MB (beats 75.15%)  
+**Submitted:** 2026-09-28T09:09:09.636Z  
 
-```py
-class Solution(object):
-    def findMaxLength(self, nums):
-        count = 0
-        max_length=0
-        table = {0: 0}
-        for index, num in enumerate(nums, 1):
-            if num == 0:
-                count -= 1
-            else:
-                count += 1
-            
-            if count in table:
-                max_length = max(max_length, index - table[count])
-            else:
-                table[count] = index
-        
-        return max_length
-        
+```java
+class Solution {
+    public int findMaxLength(int[] nums) {
+        int n = nums.length;
+        for(int i=0;i<n;i++)
+        {
+            if(nums[i] == 0)
+                nums[i] = -1;
+        }
+        Map<Integer,Integer> map = new HashMap<>();
+        map.put(0,-1);
+        int sum = 0;
+        int res = 0;
+        for(int i=0;i<n;i++)
+        {
+            sum += nums[i];
+            if(map.containsKey(sum))
+            {
+                res = Math.max(res,i-map.get(sum));
+            }
+            else
+            {
+                map.put(sum,i);
+            }
+        }
+        return res;
+    }
+}
 ```
 
 ---
