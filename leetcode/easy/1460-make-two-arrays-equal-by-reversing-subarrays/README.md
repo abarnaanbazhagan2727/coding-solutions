@@ -54,8 +54,8 @@ Explanation: arr does not have value 9 and it can never be converted to target.
 
 **Language:** Java  
 **Runtime:** 10 ms (beats 8.83%)  
-**Memory:** 46.5 MB (beats 62.20%)  
-**Submitted:** 2026-09-28T01:17:19.984Z  
+**Memory:** 46.2 MB (beats 95.27%)  
+**Submitted:** 2026-09-28T02:19:42.979Z  
 
 ```java
 class Solution {
