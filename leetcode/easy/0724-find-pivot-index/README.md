@@ -62,8 +62,8 @@ Right sum = nums[1] + nums[2] = 1 + -1 = 0
 
 **Language:** Java  
 **Runtime:** 1 ms (beats 96.16%)  
-**Memory:** 47.5 MB (beats 22.41%)  
-**Submitted:** 2026-09-28T05:44:42.784Z  
+**Memory:** 47.1 MB (beats 93.21%)  
+**Submitted:** 2026-09-28T05:44:56.149Z  
 
 ```java
 class Solution {
