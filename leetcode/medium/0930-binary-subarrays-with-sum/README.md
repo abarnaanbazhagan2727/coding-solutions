@@ -41,30 +41,32 @@ Output: 15
 
 ## Solution
 
-**Language:** Java  
-**Runtime:** 2614 ms (beats 5.08%)  
-**Memory:** 50.5 MB (beats 88.21%)  
-**Submitted:** 2026-09-30T04:29:30.426Z  
+**Language:** C  
+**Runtime:** 4 ms (beats 16.79%)  
+**Memory:** 10.7 MB (beats 67.15%)  
+**Submitted:** 2026-09-30T04:32:54.255Z  
 
-```java
-class Solution {
-    public int numSubarraysWithSum(int[] nums, int goal) {
-        int c=0;
-        for(int i=0;i<nums.length;i++)
-        {
-            int sum=0;
-            for(int j=i;j<nums.length;j++)
-            {
-                sum+=nums[j];
-                if(sum==goal)
-                {
-                    c++;
-                }
-            }
-        }
-        return c;
-        
+```c
+int numSubarraysWithSum(int* nums, int numsSize, int goal) {
+    int count[numsSize + 1];
+    for (int i = 0; i <= numsSize; i++)
+        count[i] = 0;
+
+    int sum = 0;
+    int ans = 0;
+
+    count[0] = 1;
+
+    for (int i = 0; i < numsSize; i++) {
+        sum += nums[i];
+
+        if (sum >= goal)
+            ans += count[sum - goal];
+
+        count[sum]++;
     }
+
+    return ans;
 }
 ```
 
