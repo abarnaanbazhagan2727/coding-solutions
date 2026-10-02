@@ -37,8 +37,8 @@ Output: [1,2,3,4,8,12,11,10,9,5,6,7]
 
 **Language:** Java  
 **Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 43.1 MB (beats 43.75%)  
-**Submitted:** 2026-10-01T08:03:33.953Z  
+**Memory:** 42.6 MB (beats 94.95%)  
+**Submitted:** 2026-10-02T02:02:43.402Z  
 
 ```java
 class Solution {
