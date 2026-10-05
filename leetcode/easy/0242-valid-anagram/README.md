@@ -34,22 +34,29 @@ Given two strings `s` and `t`, return `true` if `t` is an anagram of `s`, and `f
 ## Solution
 
 **Language:** Java  
-**Runtime:** 3 ms (beats 93.67%)  
-**Memory:** 46.5 MB (beats 23.95%)  
-**Submitted:** 2026-10-05T05:36:05.639Z  
+**Runtime:** 27 ms (beats 5.20%)  
+**Memory:** 44.1 MB (beats 88.95%)  
+**Submitted:** 2026-10-05T06:12:00.663Z  
 
 ```java
 class Solution {
     public boolean isAnagram(String s, String t) {
-        char[] a = s.toCharArray();
-         char[] b = t.toCharArray(); 
-         Arrays.sort(a);
-         Arrays.sort(b);
-       if(Arrays.equals(a,b))
+        if(s.length()!= t.length())
         {
-            return true;
+            return false;
         }
-        return false;
+        HashMap<Character,Integer> h=new HashMap<>();
+        for(int i=0;i<s.length();i++)
+        {
+            h.put(s.charAt(i), h.getOrDefault(s.charAt(i), 0) + 1);
+            h.put(t.charAt(i), h.getOrDefault(t.charAt(i), 0) - 1);
+        }
+         for (int value : h.values()) {
+            if (value != 0) {
+                return false;
+            }
+        }
+        return true;
     }
 }
 ```
