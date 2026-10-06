@@ -38,34 +38,35 @@ Output: "bacd"
 
 **Language:** Java  
 **Runtime:** 3 ms (beats 11.90%)  
-**Memory:** 44.6 MB (beats 77.39%)  
-**Submitted:** 2026-10-06T15:39:42.773Z  
+**Memory:** 44.8 MB (beats 61.37%)  
+**Submitted:** 2026-10-06T15:42:08.141Z  
 
 ```java
 class Solution {
     public String reverseStr(String s, int k) {
-
+        int n = s.length();
         StringBuilder sb = new StringBuilder(s);
+        int i = 0;
 
-        for(int i = 0; i < s.length(); i = i + 2*k) {
-
+        while(i < n) {
             int left = i;
-            int right = Math.min(i + k - 1, s.length() - 1);
+            int right = Math.min(i+k-1, n-1);
 
             while(left < right) {
-
-                char temp = sb.charAt(left);
+                char ch = sb.charAt(left);
                 sb.setCharAt(left, sb.charAt(right));
-                sb.setCharAt(right, temp);
+                sb.setCharAt(right, ch);
 
                 left++;
                 right--;
             }
+
+            i = i + 2 * k;
         }
 
         return sb.toString();
     }
-}
+} 
 ```
 
 ---
