@@ -36,49 +36,42 @@ The vowels in `s` are `['I', 'e', 'e', 'A']`. On reversing the vowels, s becomes
 ## Solution
 
 **Language:** Java  
-**Runtime:** 8 ms (beats 8.60%)  
-**Memory:** 45.6 MB (beats 97.94%)  
-**Submitted:** 2026-10-06T05:29:18.143Z  
+**Runtime:** 3 ms (beats 58.90%)  
+**Memory:** 46.7 MB (beats 48.10%)  
+**Submitted:** 2026-10-06T05:40:25.031Z  
 
 ```java
 class Solution {
     public String reverseVowels(String s) {
 
-        StringBuilder sb = new StringBuilder(new String(s));
+        char[] a = s.toCharArray();
 
-        int j = sb.length() - 1;
+        int left = 0;
+        int right = a.length - 1;
 
-        for (int i = 0; i < sb.length(); i++) {
+        while (left < right) {
 
-            if (!(sb.charAt(i) == 'A' || sb.charAt(i) == 'E' ||
-                  sb.charAt(i) == 'I' || sb.charAt(i) == 'O' ||
-                  sb.charAt(i) == 'U' || sb.charAt(i) == 'a' ||
-                  sb.charAt(i) == 'e' || sb.charAt(i) == 'i' ||
-                  sb.charAt(i) == 'o' || sb.charAt(i) == 'u')) {
-                continue;
+            while (left < right && !isVowel(a[left])) {
+                left++;
             }
 
-            while (j > i) {
-
-                if (sb.charAt(j) == 'A' || sb.charAt(j) == 'E' ||
-                    sb.charAt(j) == 'I' || sb.charAt(j) == 'O' ||
-                    sb.charAt(j) == 'U' || sb.charAt(j) == 'a' ||
-                    sb.charAt(j) == 'e' || sb.charAt(j) == 'i' ||
-                    sb.charAt(j) == 'o' || sb.charAt(j) == 'u') {
-
-                    char temp = sb.charAt(i);
-                    sb.setCharAt(i, sb.charAt(j));
-                    sb.setCharAt(j, temp);
-
-                    j--;
-                    break;
-                }
-
-                j--;
+            while (left < right && !isVowel(a[right])) {
+                right--;
             }
+
+            char temp = a[left];
+            a[left] = a[right];
+            a[right] = temp;
+
+            left++;
+            right--;
         }
 
-        return sb.toString();
+        return new String(a);
+    }
+
+    public boolean isVowel(char c) {
+        return "aeiouAEIOU".indexOf(c) >= 0;
     }
 }
 ```
