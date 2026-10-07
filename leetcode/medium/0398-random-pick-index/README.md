@@ -42,9 +42,9 @@ solution.pick(3); // It should return either index 2, 3, or 4 randomly. Each ind
 ## Solution
 
 **Language:** Java  
-**Runtime:** 1 ms  
-**Memory:** 42.5 MB  
-**Submitted:** 2026-10-07T17:05:57.507Z  
+**Runtime:** 1501 ms (beats 37.18%)  
+**Memory:** 60.9 MB (beats 73.35%)  
+**Submitted:** 2026-10-07T17:06:06.247Z  
 
 ```java
 public class Solution {
