@@ -37,9 +37,9 @@ Output: "rM gniD"
 ## Solution
 
 **Language:** Java  
-**Runtime:** 4 ms (beats 84.16%)  
-**Memory:** 47.1 MB (beats 19.27%)  
-**Submitted:** 2026-10-06T15:51:21.634Z  
+**Runtime:** 4 ms (beats 84.20%)  
+**Memory:** 47.1 MB (beats 19.43%)  
+**Submitted:** 2026-10-07T02:21:43.659Z  
 
 ```java
 class Solution {
