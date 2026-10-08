@@ -38,8 +38,8 @@ Explanation: "leeto" did not occur in "leetcode", so we return -1.
 
 **Language:** Java  
 **Runtime:** 3 ms (beats 8.89%)  
-**Memory:** 43.1 MB (beats 51.85%)  
-**Submitted:** 2026-10-08T05:50:03.983Z  
+**Memory:** 42.9 MB (beats 67.84%)  
+**Submitted:** 2026-10-08T05:52:23.562Z  
 
 ```java
 class Solution {
