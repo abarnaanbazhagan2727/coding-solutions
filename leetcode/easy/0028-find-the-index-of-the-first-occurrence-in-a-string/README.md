@@ -37,45 +37,15 @@ Explanation: "leeto" did not occur in "leetcode", so we return -1.
 ## Solution
 
 **Language:** Java  
-**Runtime:** 3 ms (beats 8.89%)  
-**Memory:** 42.9 MB (beats 67.84%)  
-**Submitted:** 2026-10-08T05:52:23.562Z  
+**Runtime:** 0 ms (beats 100.00%)  
+**Memory:** 43.1 MB (beats 51.85%)  
+**Submitted:** 2026-10-08T05:55:28.191Z  
 
 ```java
 class Solution {
     public int strStr(String haystack, String needle) {
-
-        if (needle.length() == 0) {
-            return 0;
-        }
-
-        int l = 0, r = 0;
-
-        while (l < haystack.length()) {
-
-            while (r < needle.length()) {
-
-                if (haystack.charAt(l) == needle.charAt(r)) {
-
-                    l++;
-                    r++;
-
-                    if (r == needle.length()) {
-                        return l - r;
-                    }
-                    if (l == haystack.length()) {
-                        return -1;
-                    }
-                }
-                else {
-                    l = l - r + 1;
-                    r = 0;
-                    break;
-                }
-            }
-        }
-
-        return -1;
+        return haystack.indexOf(needle);
+        
     }
 }
 ```
