@@ -82,13 +82,12 @@ Note: 49 is not 1 (I) less of 50 (L) because the conversion is based on decimal 
 
 **Language:** Java  
 **Runtime:** 3 ms (beats 99.87%)  
-**Memory:** 46.5 MB (beats 43.41%)  
-**Submitted:** 2026-10-10T05:58:10.653Z  
+**Memory:** 46.1 MB (beats 94.79%)  
+**Submitted:** 2026-10-10T06:14:42.520Z  
 
 ```java
 class Solution {
     public String intToRoman(int num) {
-        // Values and symbols in descending order, including subtractive pairs
         int[] values = {1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1};
         String[] symbols = {"M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"};
         
