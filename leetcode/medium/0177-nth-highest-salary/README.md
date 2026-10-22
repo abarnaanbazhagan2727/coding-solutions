@@ -71,9 +71,9 @@ Output:
 ## Solution
 
 **Language:** SQL  
-**Runtime:** 659 ms (beats 12.31%)  
+**Runtime:** 453 ms (beats 71.81%)  
 **Memory:** 0B (beats 100.00%)  
-**Submitted:** 2026-10-22T05:38:33.136Z  
+**Submitted:** 2026-10-22T05:39:09.085Z  
 
 ```sql
 CREATE FUNCTION getNthHighestSalary(N INT) RETURNS INT
