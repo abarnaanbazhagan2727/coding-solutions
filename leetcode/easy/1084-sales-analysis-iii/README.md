@@ -86,9 +86,9 @@ We return only product 1 as it is the product that was only sold in the spring o
 ## Solution
 
 **Language:** SQL  
-**Runtime:** 99 ms  
-**Memory:** 0B  
-**Submitted:** 2026-11-15T16:14:59.841Z  
+**Runtime:** 1172 ms (beats 80.96%)  
+**Memory:** 0B (beats 100.00%)  
+**Submitted:** 2026-11-15T16:15:05.822Z  
 
 ```sql
 SELECT s.product_id, product_name
