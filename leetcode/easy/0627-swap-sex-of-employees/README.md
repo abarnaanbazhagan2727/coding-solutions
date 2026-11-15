@@ -62,9 +62,9 @@ Explanation:
 ## Solution
 
 **Language:** SQL  
-**Runtime:** 68 ms  
-**Memory:** 0B  
-**Submitted:** 2026-11-15T16:01:20.316Z  
+**Runtime:** 223 ms (beats 97.45%)  
+**Memory:** 0B (beats 100.00%)  
+**Submitted:** 2026-11-15T16:01:24.638Z  
 
 ```sql
 UPDATE salary SET sex =
