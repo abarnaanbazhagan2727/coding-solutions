@@ -60,9 +60,9 @@ So the result is customer_number 3.
 ## Solution
 
 **Language:** SQL  
-**Runtime:** 79 ms  
-**Memory:** 0B  
-**Submitted:** 2026-11-15T15:51:57.539Z  
+**Runtime:** 489 ms (beats 70.09%)  
+**Memory:** 0B (beats 100.00%)  
+**Submitted:** 2026-11-15T15:52:04.610Z  
 
 ```sql
 # Write your MySQL query statement below
