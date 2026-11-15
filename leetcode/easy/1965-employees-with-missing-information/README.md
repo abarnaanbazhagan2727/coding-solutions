@@ -84,9 +84,9 @@ The salary of employee 2 is missing.
 ## Solution
 
 **Language:** SQL  
-**Runtime:** 110 ms  
-**Memory:** 0B  
-**Submitted:** 2026-11-15T16:26:20.152Z  
+**Runtime:** 549 ms (beats 92.02%)  
+**Memory:** 0B (beats 100.00%)  
+**Submitted:** 2026-11-15T16:26:25.249Z  
 
 ```sql
 SELECT T.employee_id
