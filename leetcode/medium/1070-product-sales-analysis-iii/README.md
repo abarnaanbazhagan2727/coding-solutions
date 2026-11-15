@@ -59,9 +59,9 @@ Output:
 ## Solution
 
 **Language:** SQL  
-**Runtime:** 82 ms  
-**Memory:** 0B  
-**Submitted:** 2026-11-15T16:13:44.113Z  
+**Runtime:** 690 ms (beats 88.17%)  
+**Memory:** 0B (beats 100.00%)  
+**Submitted:** 2026-11-15T16:13:50.347Z  
 
 ```sql
 SELECT product_id, year AS first_year, quantity, price
