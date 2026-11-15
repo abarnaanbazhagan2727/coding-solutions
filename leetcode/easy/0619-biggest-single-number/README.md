@@ -84,9 +84,9 @@ Explanation: There are no single numbers in the input table so we return null.
 ## Solution
 
 **Language:** SQL  
-**Runtime:** 81 ms  
-**Memory:** 0B  
-**Submitted:** 2026-11-15T15:56:10.342Z  
+**Runtime:** 436 ms (beats 78.97%)  
+**Memory:** 0B (beats 100.00%)  
+**Submitted:** 2026-11-15T15:57:03.579Z  
 
 ```sql
 # Write your MySQL query statement below
