@@ -117,9 +117,9 @@ According to orders 3 and 4 in the Orders table, it is easy to tell that only sa
 ## Solution
 
 **Language:** SQL  
-**Runtime:** 127 ms  
-**Memory:** 0B  
-**Submitted:** 2026-11-15T15:53:48.399Z  
+**Runtime:** 1355 ms (beats 90.88%)  
+**Memory:** 0B (beats 100.00%)  
+**Submitted:** 2026-11-15T15:53:54.531Z  
 
 ```sql
 # Write your MySQL query statement below
