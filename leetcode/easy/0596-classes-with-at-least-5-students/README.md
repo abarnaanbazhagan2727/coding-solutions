@@ -63,9 +63,9 @@ Explanation:
 ## Solution
 
 **Language:** SQL  
-**Runtime:** 67 ms  
-**Memory:** 0B  
-**Submitted:** 2026-11-15T15:53:11.206Z  
+**Runtime:** 291 ms (beats 97.98%)  
+**Memory:** 0B (beats 100.00%)  
+**Submitted:** 2026-11-15T15:53:15.847Z  
 
 ```sql
 SELECT class
