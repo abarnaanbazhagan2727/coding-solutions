@@ -63,9 +63,9 @@ Output:
 ## Solution
 
 **Language:** SQL  
-**Runtime:** 302 ms (beats 70.61%)  
-**Memory:** 0B (beats 100.00%)  
-**Submitted:** 2026-11-15T15:52:43.809Z  
+**Runtime:** 78 ms  
+**Memory:** 0B  
+**Submitted:** 2026-11-15T15:52:39.531Z  
 
 ```sql
 SELECT name, population, area
