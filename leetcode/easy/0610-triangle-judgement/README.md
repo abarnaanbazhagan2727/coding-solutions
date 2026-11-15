@@ -53,9 +53,9 @@ Output:
 ## Solution
 
 **Language:** SQL  
-**Runtime:** 77 ms  
-**Memory:** 0B  
-**Submitted:** 2026-11-15T15:59:42.502Z  
+**Runtime:** 261 ms (beats 97.38%)  
+**Memory:** 0B (beats 100.00%)  
+**Submitted:** 2026-11-15T15:59:51.349Z  
 
 ```sql
 SELECT x,y,z,
