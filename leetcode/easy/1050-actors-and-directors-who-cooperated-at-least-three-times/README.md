@@ -57,9 +57,9 @@ Explanation: The only pair is (1, 1) where they cooperated exactly 3 times.
 ## Solution
 
 **Language:** SQL  
-**Runtime:** 79 ms  
-**Memory:** 0B  
-**Submitted:** 2026-11-15T16:02:05.446Z  
+**Runtime:** 297 ms (beats 99.80%)  
+**Memory:** 0B (beats 100.00%)  
+**Submitted:** 2026-11-15T16:02:09.536Z  
 
 ```sql
 # Write your MySQL query statement below
