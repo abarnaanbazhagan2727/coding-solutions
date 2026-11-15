@@ -59,18 +59,18 @@ Output:
 ## Solution
 
 **Language:** SQL  
-**Runtime:** 94 ms  
+**Runtime:** 82 ms  
 **Memory:** 0B  
-**Submitted:** 2026-11-15T16:13:04.069Z  
+**Submitted:** 2026-11-15T16:13:44.113Z  
 
 ```sql
-SELECT 
-    product_id, 
-    MIN(year) AS first_year, 
-    quantity, 
-    price
-FROM sales
-GROUP BY product_id;
+SELECT product_id, year AS first_year, quantity, price
+FROM Sales
+WHERE (product_id, year) in (
+    SELECT product_id, MIN(year) 
+    FROM Sales
+    GROUP BY product_id
+)
 ```
 
 ---
