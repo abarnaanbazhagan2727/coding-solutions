@@ -112,9 +112,9 @@ Output:
 ## Solution
 
 **Language:** SQL  
-**Runtime:** 337 ms  
-**Memory:** 0B  
-**Submitted:** 2026-11-15T16:19:01.768Z  
+**Runtime:** 1241 ms (beats 84.59%)  
+**Memory:** 0B (beats 100.00%)  
+**Submitted:** 2026-11-15T16:19:08.060Z  
 
 ```sql
 select
