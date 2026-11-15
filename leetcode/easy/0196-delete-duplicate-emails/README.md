@@ -58,9 +58,9 @@ Explanation: john@example.com is repeated two times. We keep the row with the sm
 ## Solution
 
 **Language:** SQL  
-**Runtime:** 1121 ms (beats 17.15%)  
+**Runtime:** 823 ms (beats 79.83%)  
 **Memory:** 0B (beats 100.00%)  
-**Submitted:** 2026-11-15T15:32:27.485Z  
+**Submitted:** 2026-11-15T15:39:42.073Z  
 
 ```sql
 # Write your MySQL query statement below
