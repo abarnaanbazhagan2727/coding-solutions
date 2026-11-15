@@ -65,9 +65,9 @@ The rows with ids 2 and 3 are not included because we need at least three consec
 ## Solution
 
 **Language:** SQL  
-**Runtime:** 113 ms  
-**Memory:** 0B  
-**Submitted:** 2026-11-15T15:54:24.921Z  
+**Runtime:** 374 ms (beats 84.72%)  
+**Memory:** 0B (beats 100.00%)  
+**Submitted:** 2026-11-15T15:54:29.796Z  
 
 ```sql
 # Write your MySQL query statement below
