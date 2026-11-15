@@ -93,9 +93,9 @@ Explanation: If there is only one node on the tree, you only need to output its 
 ## Solution
 
 **Language:** SQL  
-**Runtime:** 89 ms  
-**Memory:** 0B  
-**Submitted:** 2026-11-15T15:59:03.652Z  
+**Runtime:** 366 ms (beats 99.79%)  
+**Memory:** 0B (beats 100.00%)  
+**Submitted:** 2026-11-15T15:59:08.861Z  
 
 ```sql
 SELECT id,
