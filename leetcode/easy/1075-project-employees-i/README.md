@@ -83,9 +83,9 @@ Explanation: The average experience years for the first project is (3 + 2 + 1) /
 ## Solution
 
 **Language:** SQL  
-**Runtime:** 103 ms  
-**Memory:** 0B  
-**Submitted:** 2026-11-15T16:14:23.783Z  
+**Runtime:** 730 ms (beats 16.81%)  
+**Memory:** 0B (beats 100.00%)  
+**Submitted:** 2026-11-15T16:14:33.201Z  
 
 ```sql
 SELECT project_id, ROUND(AVG(experience_years), 2) as average_years
